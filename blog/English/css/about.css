@@ -1,0 +1,40 @@
+.container{
+   position: absolute;
+   
+    text-align: center;
+}
+
+.about .sub-title{
+    color: red;
+}
+
+.about{
+    margin: 80px;
+}
+.about h1 h3{
+    text-align: center;
+}
+.about h1{
+    letter-spacing: 12px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.about h3{
+    color: rgba(252, 63, 7, 0.93);
+}
+.about p{
+    padding: 10px 137px opx;
+}
+
+@media(max-width:1200px){
+    .navbar-nav li a{
+        font-size: 15px;
+    }
+}
+@media(max-width:992px){
+    .navbar-toggler{
+        margin: 10px 0px 10px 30px;
+        background-color: #ff4f81;
+    }
+}
+    
