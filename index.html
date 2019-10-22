@@ -18,7 +18,7 @@
   
   <link rel="stylesheet" type="text/css" href="css/icons-main.css">
 <link rel="stylesheet" type="text/css" href="css/testimonials-section.css">
-
+<link rel="stylesheet" type="text/css" href="css/contact-section.css">
  
       
 </head>
@@ -40,12 +40,22 @@
                </form>    
                
            </div>
-           <div class="clearfix"></div>
+           <div class="clearfix"></div>  
+           
+           
            </header>
            
-           <!--Nav bar-->
+           <!--
+           <div id="navbar">
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="javascript:void(0)">News</a>
+  <a href="javascript:void(0)">Contact</a>
+</div>
+-->
            
- <div class="nav1">
+           <!--Nav bar-->
+        
+ <div id="navbar" class="nav1">
            
 <nav class="navbar navbar-expand-lg navbar-light ">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,7 +86,7 @@
         <a class="nav-link" href="#clients">Clients</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </li>
       
     </ul>
@@ -86,6 +96,18 @@
 </div>
 <!--main -->
 
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
  <div class="wrapper">
      <h2>I am a <span></span></h2>
          <p>h sh hss cshchscshcs chschsc s cshcscbsjkc shccnchsc asc sh. </p> <br/ >
@@ -135,16 +157,11 @@
              max-width: 100%">
 
    </div>  
-</div>
-   
+  </div>   
  </div>
-
-     </div>    
-    
-<br>
-            
+</div>        
  <!-- end about section -->
-
+<br> 
 <!-- Services section -->
  <div id="services"><H4 style="text-align: center">Our Services</H4></div>
    <div class="Service-section">
@@ -234,19 +251,16 @@
 		        <h3>Online Support</h3>
 		        <p>KAVERI Online service is a web based application of Department of Stamps & Registration, Government of Karnataka that provides </p>
                 <div class="service-link"><a href="#">Read More</a></div>		    </div>
-		</div>
-		
-   
-   
+		</div>   
     </div>
-<br>
 <!-- end service section -->
-
-
+<br><br>
 <!-- testimonials-->
 
-<div class="testimonials-section" id="clients"><h4>Our Clients review</h4></div>
-	<div class="testimonials-container">
+<div id="clients">
+<div class="testimonials-section"><h4>Our Clients review</h4></div>
+<br>
+<div class="testimonials-container">
 
 <div class="mySlides">
   <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
@@ -272,18 +286,19 @@
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
+ </div>
 </div>
 <!-- testimonials-->
 <br><br>
 
 
-
+<div>
 <h4 style="text-align: center">Our Happy Clients</h4>
 
 <div class="container mt-5" style="border: 2px solid #dbd9d9; max-width: 90%; margin-left: 30px">
 	<div class="row">
 		<div class="owl-carousel owl-theme">
-    <div class="item" style="margin-top: 10px;"><img src="image/rr-logo.jpg" alt="flower1"></div>
+    <div class="item" style="margin-top: 10px; margin-left: 20px;"><img src="image/rr-logo.jpg" alt="flower1"></div>
     <div class="item"><img src="image/shubhechha-1.jpg" alt="flower2"></div>
     <div class="item"><img src="image/carevision.jpg" alt="flower3"></div>
      <div class="item"><img src="image/rr-logo.jpg" alt="flower1"></div>
@@ -294,16 +309,50 @@
     <div class="item"><img src="image/carevision.jpg" alt="flower3"></div>
     
 </div>
-	</div>
 </div>
-
-
+</div>
+  </div>   
+                     
                       
-       
-     
-                        
-                                
-                         
+  <br><br><br><br><br><br><br><br>    
+  <!--contact section -->   
+ <div class="contact-section" id="contact">
+  <div style="text-align:center"><br>
+    <h4>Contact Us</h4>
+    <p style="color: rgba(204, 5, 66, 0.99); font-weight: 550px">Contact us in below id and number or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="/w3images/map.jpg" style="width:100%">
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-413a5294-3771-48e4-aec7-40134269cc5b"></div>
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name *</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name *</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="lname">Phone no. *</label>
+        <input type="text" id="lname" name="phone no" placeholder="Your phone no with country code..">
+        <label for="lname">Email *</label>
+        <input type="text" id="lname" name="email" placeholder="Your valid email id..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="australia">Nepal</option>
+          <option value="australia">India</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>                                       
+<!--contact section -->                      
                           
   <!-- Social Icons -->
        <div class="main-icon section">
@@ -323,7 +372,20 @@
            
                                                      
      
+<script>
+window.onscroll = function() {myFunction()};
 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>                      
