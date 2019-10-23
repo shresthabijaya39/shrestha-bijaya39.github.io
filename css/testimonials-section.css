@@ -44,7 +44,7 @@ margin-left: 30px;
 /* Position the "next button" to the right */
 .next {
   position: absolute;
-  right: 20px;
+  right: 0;
   border-radius: 3px 0 0 3px;
 }
 
@@ -89,10 +89,7 @@ q {font-style: italic;}
 @media (max-width: 500px) {
   .clients {
     text-align: center;
-	  height: auto;
-	  margin-top: 200px;
-	  
-	 
+	  height: auto;	   
   }
 
   
