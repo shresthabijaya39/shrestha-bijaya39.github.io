@@ -1,11 +1,15 @@
+.project-gallery-section{
+	max-width: 100%;
+}
 div.gallery {
  padding: 20px;
-	margin-right: 40px;
+margin-right: 0;
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 400px;
+ max-width:  300px;
 	height: auto;
+	
 }
 
 div.gallery:hover {
