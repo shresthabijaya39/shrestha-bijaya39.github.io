@@ -1,5 +1,7 @@
 .project-gallery-section{
-	max-width: 100%;
+	max-width: 100;
+	height: auto;
+	
 }
 div.gallery {
  padding: 20px;
@@ -8,8 +10,7 @@ margin-right: 0;
   border: 1px solid #ccc;
   float: left;
  max-width:  300px;
-	height: auto;
-	
+	 
 }
 
 div.gallery:hover {
