@@ -1,2 +1,0 @@
-href="./"     ../     .../
-togo home folder - only   /
