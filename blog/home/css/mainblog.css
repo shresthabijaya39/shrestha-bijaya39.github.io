@@ -1,6 +1,9 @@
 body{
-    margin: 5px;
+    margin: 0;
     padding: 0;
+	max-width: 100%;
+	margin-right: 0;
+	position: relative;
 }
 
 
@@ -40,8 +43,8 @@ navbar-toggler-icon{
 
 .navbar-nav{
     float: right;
-    margin-left:20px;
     box-sizing: 10px;
+	max-width: 100%;
 }
 .navbar-brand:hover{
     background: red;
@@ -91,8 +94,8 @@ box-sizing: 10px;
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
+  -ms-flex: 25%; 
+  flex: 25%;
   background-color: #f1f1f1;
   padding: 20px;
 }
@@ -101,15 +104,16 @@ box-sizing: 10px;
 .main {   
   -ms-flex: 40%; /* IE10 */
   flex: 40%;
+  padding: 10px;
   background-color: white;
-  padding: 20px;
 }
 
 .right-side{
-    -ms-flex: 30%; /* IE10 */
-  flex: 30%;
+    -ms-flex: 25%; /* IE10 */
+  flex: 25%;
   background-color: #f1f1f1;
   padding: 20px;
+  width: 99%;
 }
 
 .sentence-of-day{
@@ -120,7 +124,6 @@ box-sizing: 10px;
 }
 .questions-box{
     border: 2px solid #727171;
-    max-width: 80%;
     margin-left: 10%;
     border-left: 6px solid #109110; 
     background-color: #ffffff;
@@ -130,15 +133,6 @@ box-sizing: 10px;
     margin-bottom: 5px;
     color: #120764;
     font-weight: 500;
-   
-
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
 }
 
 /* Footer */
@@ -148,7 +142,7 @@ box-sizing: 10px;
   position: relative;
    left: 10;
    bottom: 0;
-   width: 100%;
+   max-width: 100%;
    background-color: #34393c;
    color: white;
    text-align: center;
@@ -163,9 +157,7 @@ box-sizing: 10px;
 }
 .container-fluid{
     margin-top: 30px;
-  
-    top: 10px;
-    
+    top: 10px;    
 }
 .icons-footer p{
     text-align: center;
@@ -182,13 +174,14 @@ box-sizing: 10px;
 @media screen and (max-width: 700px) {
   .row {   
     flex-direction: column;
+	  max-width: 100%;
   }
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .navbar a {
     float: none;
-    width: 100%;
+    max-width: 100%;
   }
 }
