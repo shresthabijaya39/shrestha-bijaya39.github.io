@@ -1,6 +1,8 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
+ 
   <title>main blog</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +18,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="margin: 0; max-width: 100%;">
     
     <div class="banner">
        <header>
@@ -42,7 +44,7 @@
 
 <!-- Toggler/collapsibe Button -->
   
-<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="max-width: 100%">
      <a class="navbar-brand " href="/index.html"s target="_blank"><i class="fa fa-home" ></i></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -332,6 +334,7 @@ border-right: 2px solid #bbb;">
             &nbsp;Flume</i></a> 
                  
     </div>
+    
     <!-- end Interview sub-topics-->
     
     <!-- Excel Interview sub-topics-->
@@ -405,12 +408,13 @@ border-right: 2px solid #bbb;">
                  
     </div>
     <!-- end Interview sub-topics-->
-<div></div><br><br><br><br><br><br><br><br>
+<div></div><br>
 
 
  <!-- end Interview topics--> 
     </div>
 </div>
+
  <!-- end slide bar --> 
  
 <!-- main content-->
@@ -426,8 +430,8 @@ border-right: 2px solid #bbb;">
   <img src="image/hdfs%20logo.jpg" style="margin-left:15%; width: 500px; " ><br><br>
    <!-- questioning start-->
     <div class="questions-box" style="margin-left: 40px; max-width: 90%;">
-     <p>
-      1) What is HDFS?
+     <p style="color: #700988">
+      Q. What is HDFS?
       </p>  
    </div> 
      <br><input type="submit" value="Show Answer" style="background-color: blue; color: white; margin-left: 40px;
@@ -448,8 +452,8 @@ border-right: 2px solid #bbb;">
  <br><br>
   <!-- questioning start-->
     <div class="questions-box" style="margin-left: 40px; max-width: 90%;">
-     <p>
-     2) What is NameNode in HDFS?
+     <p style="color: #700988">
+     Q. What is NameNode in HDFS?
       </p>  
    </div> 
      <br><input type="submit" value="Show Answer" style="background-color: blue; color: white;     margin-left: 40px;
@@ -482,9 +486,45 @@ Two files ‘FSImage’ and the ‘EditLog’ are used to store metadata informa
   <input type="submit" value="Hide Answer" style="background-color: #ff3b00; color: white;"/>
     </div> 
 <!-- end questioning -->
- 
+<br><br>
+<!-- questioning start-->
+    <div class="questions-box" style="margin-left: 40px; max-width: 90%;">
+     <p style="color: #700988">
+     Q. What are the modes in which Hadoop run. Explain them?<br>
+     Or<br>
+     What are Different modes of Hadoop?
+      </p>  
+   </div> 
+     <br><input type="submit" value="Show Answer" style="background-color: blue; color: white;     margin-left: 40px;
+"/>
+
+<div class="hide-show-border" id="aaa" style="margin-left: 40px; ">
+<pre>
+<p>Hadoop can run in following modes.
+
+- Standalone Mode
+- Pseudo Distributed Mode(Single-Node Cluster)
+- Fully distributed mode (or multiple node cluster)
+
+<b>Standalone Mode
+</b>
+- Default mode for Hadoop
+- HDFS is not utilized here instead local file system is used for input and output.
+- Mainly used for debugging purpose.
+- Custom configuration not required within 3 Hadoop files(mapred-site.xml, core-site.xml,hdfs-site.xml)
+- Faster than Pseudo-distributed node.
+
+</p>
+ </pre>
+  <input type="submit" value="Hide Answer" style="background-color: #ff3b00; color: white;"/>
+    </div> 
+<!-- end questioning -->
+
+
+ </div>
+	</div>
 <!-- footer-->
-<div class="footer">
+<div class="footer" style="position: relative; max-width: 99%; ">
    <div class="container-fluid">
     <div class="container-fluid">
 <div class="row">
@@ -507,15 +547,15 @@ Two files ‘FSImage’ and the ‘EditLog’ are used to store metadata informa
 <span><a href="https://twitter.com/BijayaS06567134" target="_blank"><i class="fab fa-twitter" style="background-color: #0f0ffd; color: white;"></i></a></span>
   
   </div>
+  </div>
 <!-- footer end--> 
  
    
-</div>
 <!-- end main content-->
 
 <!-- end main content-->
 
-</div>
+
 <!-- end footer-->
 
 

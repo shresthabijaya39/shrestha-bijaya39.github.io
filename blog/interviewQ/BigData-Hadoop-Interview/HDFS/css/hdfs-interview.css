@@ -1,5 +1,5 @@
 body{
-    margin: 5px;
+    margin: 0;
     padding: 0;
 }
 
@@ -1103,6 +1103,8 @@ input:focus + div#aaa {
 @media screen and (max-width: 700px) {
   .row {   
     flex-direction: column;
+	  position: relative;
+	  max-width: 100%;
   }
 }
 
@@ -1169,13 +1171,12 @@ input:focus + div#aaa {
 /* footer--*/
 /* Footer */
 .footer {
- -ms-flex: 30%; /* IE10 */
-  flex: 30%;
+ 
   position: relative;
    left: 20px;
    bottom: 0;
    max-width: 98%;
-   background-color: #34393c;
+   background-color: #0755bf;
    color: white;
    text-align: center;
 }
@@ -1203,6 +1204,12 @@ input:focus + div#aaa {
     color: #3b5998;
 }
 
-
+@media screen and (max-width: 700px) {
+  .footer {
+    width: 100%;
+    height: auto;
+  }
+  
+}
 
 
