@@ -4,6 +4,7 @@ body{
 	max-width: 100%;
 	margin-right: 0;
 	position: relative;
+	
 }
 
 
@@ -94,26 +95,112 @@ box-sizing: 10px;
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  -ms-flex: 25%; 
-  flex: 25%;
+  -ms-flex: 20%; 
+  flex: 20%;
   background-color: #f1f1f1;
   padding: 20px;
+height: 300vh;
+	
 }
+
+.side .calender{
+	border: 2px 3px solid red;
+	background-color:lavender; 
+    height: 340px; width: 100%; box-sizing: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.imp-links{
+	border: 2px 3px solid red;
+	background-color:#ffffff; 
+	box-sizing: 100%;
+	text-justify: auto;
+    text-align: left;
+    margin-top: 20px;
+	padding: 10px;
+}
+.imp-links h5{
+	text-align: center;
+	color: white;
+	background-color: #110c83;	
+	border-style: double;
+}
+
+.banks{
+	border: 2px 3px solid red;
+	background-color:#ffffff; 
+	box-sizing: 100%;
+	text-justify: auto;
+    text-align: left;
+    margin-top: 20px;
+	padding: 10px;
+}
+.banks h5{
+	text-align: center;
+	color: white;
+	background-color: #d8109a;	
+	border-style: double;
+}
+.
+
+.facebook-page{
+	border: 2px 3px solid red;
+	background-color:#ffffff; 
+    height: 170px; width: 100%; box-sizing: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.recent-post{
+	border: 2px 3px solid red;
+	background-color:#ffffff; 
+    height: 170px; width: 100%; 
+	box-sizing: 100%;
+	text-justify: auto;
+    text-align: left;
+    margin-top: 20px;
+	padding: 10px;
+}
+.recent-post h5{
+	text-align: center;
+	color: white;
+	background-color: red;	
+	border-style: double;
+}
+
+.job-web{
+	border: 2px 3px solid red;
+	background-color:#ffffff; 
+	box-sizing: 100%;
+	text-justify: auto;
+    text-align: left;
+    margin-top: 20px;
+	padding: 10px;
+}
+.job-web h5{
+	text-align: center;
+	color: white;
+	background-color: #110c83;	
+	border-style: double;
+}
+
 
 /* Main column */
 .main {   
-  -ms-flex: 40%; /* IE10 */
-  flex: 40%;
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
   padding: 10px;
   background-color: white;
+	height: auto;
 }
 
 .right-side{
-    -ms-flex: 25%; /* IE10 */
-  flex: 25%;
+    -ms-flex: 20%; /* IE10 */
+  flex: 20%;
   background-color: #f1f1f1;
   padding: 20px;
   width: 99%;
+	
 }
 
 .sentence-of-day{
@@ -174,6 +261,7 @@ box-sizing: 10px;
 @media screen and (max-width: 700px) {
   .row {   
     flex-direction: column;
+	  padding: 10px;
 	  max-width: 100%;
   }
 }
@@ -183,5 +271,12 @@ box-sizing: 10px;
   .navbar a {
     float: none;
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .side {   
+    flex-direction: column;
+	  max-width: 100%;
   }
 }
