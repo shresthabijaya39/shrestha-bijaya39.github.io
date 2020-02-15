@@ -14,7 +14,7 @@
 
 
 </head>
-<body>
+<body onload="myFunction()">
     
     <div class="banner">
        <header>
@@ -171,14 +171,9 @@
     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     <br>
     
-     <script>
-   function myFunction() {
-   var x = document.URL;
-   document.getElementById("jinu").src = 'https://www.facebook.com/plugins/share_button.php?href='+x+'&layout=button_count&size=large&mobile_iframe=true&width=83&height=28&appId';
-  }
-  </script>
+   
 
- <div onload="myFunction()">
+ <div >
  <iframe id="jinu" src="" width="83" height="28" style="border:none;overflow:hidden" scrolling="no"  frameborder="0" allowTransparency="true"></iframe>
   </div>
     
@@ -310,6 +305,13 @@
 
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
+
+  <script>
+   function myFunction() {
+   var x = document.URL;
+   document.getElementById("jinu").src = 'https://www.facebook.com/plugins/share_button.php?href='+x+'&layout=button_count&size=large&mobile_iframe=true&width=83&height=28&appId';
+  }
+  </script>
 
 </body>
 </html>
